@@ -3,6 +3,8 @@ from model import model
 import this
 
 this.modelo = model() 
+this.codigo = 0
+this.msg = ""
 this.nome =     ""
 this.telefone = ""
 this.data =     ""
