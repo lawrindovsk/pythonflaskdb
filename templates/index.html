@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <label id="lNome" name="lNome">Nome:</label><br>
+        <input type="text" id="tNome" name="tNovoNome" placeholder="Informe seu nome"/><br>
+        
+        <label id="lTelefone" name="lTelefone">Telefone:</label><br>
+        <input type="text" id="tTelefone" name="tNovoTelefone" placeholder="(11) 99999-9999"/><br>
+
+        <label id="lEndereco" nam="lEndereco">Endereci:</label><br>
+        <input type="text" id="tEnderco" name="tNovoEndereco" placeholder="Informe seu endereco:"/><br>
+
+        <label id="lData" name="lData">Data de Nascimento:</label><br>
+        <input type="text" id="tData" name="tNovaData"/><br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+    <label id="result" name="result">{{resultado}}</label>
+        <form action="consultar.html" method="POST">
+        <input type="number" id="tCodigo" name="tNovoCodigo"/><br>
+          <button type="submit">Consultar</button>
+    </form>
+
+</body>
+</html>

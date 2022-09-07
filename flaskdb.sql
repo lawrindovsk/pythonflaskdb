@@ -5,3 +5,4 @@ telefone varchar(15) not null,
 endereco varchar(150) not null,
 dataDeNascimento date not null
 )Engine = InnoDB;
+
