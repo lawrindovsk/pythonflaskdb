@@ -43,9 +43,9 @@ def atualizar(self, cod, campo, novoDado):
 def excluir(self, cod):
     try:
         sql = "delete from person where codigo = '{}'".format(cod)
-        self.con.execute(cod)
+        self.con.execute(sql)
         self.db_connection.commit()
-        return "{} Linha excluida!".format(cod)
+        return "{} Linha excluida!".format(self.con.rowcount)
 
     except Exception as erro:
         return erro
